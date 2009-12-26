@@ -1,10 +1,12 @@
 from django.conf.urls.defaults import *
+import Cheetar.views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    (r'.*', Cheetar.views.index),
     # Example:
     # (r'^django_cheetah_example/', include('django_cheetah_example.foo.urls')),
 
